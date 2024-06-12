@@ -1,0 +1,16 @@
+{
+    "name": "Freelancer Auto bid",
+    "manifest_version": 3,   
+    "description": "An extension to automatically place bids on projects in freelancer.com",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": [
+                "*://*.freelancer.com/projects/*", 
+                "https://www.freelancer.com/projects/python/Python-Business-Management-System/details"
+            ]
+        }
+    ]
+
+}
